@@ -1,0 +1,12 @@
+**/node_modules/**
+**/dist/**
+**/storybook-static/**
+**/coverage/**
+**/build/**
+**/.git/**
+**/public/**
+**/web-build/**
+serviceWorker.ts
+babel.config.js
+metro.config.js
+webpack.config.js

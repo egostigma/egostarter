@@ -1,0 +1,68 @@
+{
+  "name": "egostarter",
+  "private": true,
+  "scripts": {
+    "clean": "yarn workspaces run clean",
+    "components": "yarn workspace @egostarter/components",
+    "mobile": "yarn workspace @egostarter/mobile",
+    "rnw": "yarn workspace @egostarter/mobile web",
+    "web": "yarn workspace @egostarter/web",
+    "storybook": "yarn workspace @egostarter/storybook",
+    "test": "cross-env FORCE_COLOR=true lerna run lint && cross-env CI=true FORCE_COLOR=true lerna run test -- --coverage",
+    "postinstall": "cd ./packages/apps/mobile && expo-yarn-workspaces postinstall",
+    "deploy": "cross-env FORCE_COLOR=true lerna run deploy"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/apps/*",
+      "packages/components",
+      "packages/storybook"
+    ],
+    "nohoist": [
+      "packages/apps/**/@expo/webpack-config",
+      "packages/apps/**/webpack-dev-server",
+      "**/babel-loader",
+      "**/babel-jest"
+    ]
+  },
+  "dependencies": {
+    "react-native": "~0.61.5"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "babel-eslint": "10.0.3",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-flowtype": "^4.7.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "eslint-plugin-react-native": "^3.8.1",
+    "husky": "^4.2.5",
+    "jest-prop-type-error": "^1.1.0",
+    "lerna": "^3.20.2",
+    "prettier": "^2.0.4"
+  },
+  "resolutions": {
+    "react-dev-utils": "10.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test"
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/setupTests.{js,jsx,ts,tsx}",
+      "!src/index.{js,jsx,ts,tsx}",
+      "!src/serviceWorker.{js,jsx,ts,tsx}",
+      "!src/**/*.(spec|test|stories).{js,jsx,ts,tsx}"
+    ]
+  }
+}

@@ -62,7 +62,7 @@ buck-out/
 .expo/*
 
 # testing
-coverage/*
+/coverage/*
 
 # production
-web-build/*
+/web-build/*

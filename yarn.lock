@@ -1470,7 +1470,7 @@
   dependencies:
     lodash "^4.17.4"
 
-"@expo/webpack-config@^0.11.20":
+"@expo/webpack-config@^0.11.21":
   version "0.11.21"
   resolved "https://registry.yarnpkg.com/@expo/webpack-config/-/webpack-config-0.11.21.tgz#27427857111e5631f67be889c0bb8327902556a4"
   integrity sha512-BQtgH/8SPdAizuYRs9o+0gkBWhLf8XUY56sx1TvprtGtFJUJRLXHVf2YrLcTrsD08xa0PmE/JSTNZD4q87txuQ==
@@ -3619,7 +3619,7 @@
     dom-accessibility-api "^0.4.2"
     pretty-format "^25.1.0"
 
-"@testing-library/jest-dom@^5.4.0":
+"@testing-library/jest-dom@^5.5.0":
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-5.5.0.tgz#4707023e8f572021e8a84f65721303ff60828d88"
   integrity sha512-7sWHrpxG4Yd8TmryI7Rtbx8Ff4mbs3ASye3oshQIuHvsCR+QHgr7rTR/PfeXvOmwUwR36wSTTAvrLKsPmr6VEQ==
@@ -3875,7 +3875,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.9.11", "@types/react@^16.9.33", "@types/react@~16.9.34":
+"@types/react@*", "@types/react@^16.9.11", "@types/react@^16.9.34", "@types/react@~16.9.34":
   version "16.9.34"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.34.tgz#f7d5e331c468f53affed17a8a4d488cd44ea9349"
   integrity sha512-8AJlYMOfPe1KGLKyHpflCg5z46n0b5DbRfqDksxBLBTUpB75ypDBAO9eCUcjNwE6LCUslwTz00yyG/X9gaVtow==
@@ -9985,9 +9985,9 @@ html-encoding-sniffer@^1.0.2:
     whatwg-encoding "^1.0.1"
 
 html-entities@^1.2.0, html-entities@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.2.1.tgz#0df29351f0721163515dfb9e5543e5f6eed5162f"
-  integrity sha1-DfKTUfByEWNRXfueVUPl9u7VFi8=
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.3.1.tgz#fb9a1a4b5b14c5daba82d3e34c6ae4fe701a0e44"
+  integrity sha512-rhE/4Z3hIhzHAUKbW8jVcCyuT5oJCXXqhN/6mXXVCpzTmvJnoH2HL/bt3EZ6p55jbFJBeAe1ZNpL5BugLujxNA==
 
 html-escaper@^2.0.0:
   version "2.0.2"
@@ -15586,9 +15586,9 @@ react-dom@^16.13.1, react-dom@^16.8.3:
     scheduler "^0.19.1"
 
 react-draggable@^4.0.3:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/react-draggable/-/react-draggable-4.2.0.tgz#40cc5209082ca7d613104bf6daf31372cc0e1114"
-  integrity sha512-5wFq//gEoeTYprnd4ze8GrFc+Rbnx+9RkOMR3vk4EbWxj02U6L6T3yrlKeiw4X5CtjD2ma2+b3WujghcXNRzkw==
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/react-draggable/-/react-draggable-4.3.0.tgz#ece20e489af95a7bb93c14c6701b272c25a8dd67"
+  integrity sha512-er6mpn/F/8qLdhGJ21XSzcQl7hTWGsb/af9NaOhSH1M/aivhwf8WHfopmRAF7iRL3x7guLC5TF9HJaouIGHVvw==
   dependencies:
     classnames "^2.2.5"
     prop-types "^15.6.0"

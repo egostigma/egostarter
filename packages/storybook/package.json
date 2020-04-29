@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@egostarter/components": "1.0.0",
-    "@react-workspaces/react-scripts": "3.3.0-alpha-08",
+    "@react-workspaces/react-scripts": "^3.4.0-alpha-01",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
